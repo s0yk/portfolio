@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --tlt: #141617;
+    --txt: #232525;
+    --dark: #141617;
+    --birght: #f9f9f9;
+}
+
+/* reset */
+* {margin: 0; padding: 0;}
+html {font-size: .7vw;}
+body {
+    width: 100%;
+	color: var(--tlt);
+	font-family: 'Pretendard', 'sans-serif';
+    font-size: clamp(14px, 1.6rem, 18px);
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    background: #f9f9f9;
+	overflow-x: hidden;
+}
+li { list-style: none; }
+a {
+	text-decoration: none;
+	color: inherit;
+}
+h1, h2, h3, h4, h5, h6, b {
+	color: var(--tlt);
+	font-family: 'Pretendard', 'sans-serif';
+}
+h1, h2, h3, h4, h5, h6, b, p, dl, dd, dt, ul, ol, li, span { cursor: default;}
+button {
+    border: 0; background: none;
+}
+
+::selection {
+    background:#141617;
+    color: var(--white);
+    text-shadow: none;
+}
+::-moz-selection {
+    background:#141617;
+    color: var(--white);
+    text-shadow: none;
+}
+::-webkit-selection {
+    background:#141617;
+    color: var(--white);
+    text-shadow: none;
+}
+
+.po {display: none !important;}
+
+/************** Header **************/
+#header {
+    position: fixed;
+    width: 100%; height: 50px;
+    top: 48px;
+    font-size: 18px;
+    font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
+    z-index: 9999;
+}
+#header .innerHeader .headerLeft {
+    position: absolute;
+    left: 48px; top: 50%;
+    transform: translateY(-50%);
+    mix-blend-mode: difference;
+}
+#header .innerHeader .headerCtr {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+#header .innerHeader .headerRight {
+    position: absolute;
+    right: 48px; top: 50%;
+    transform: translateY(-50%);
+}
+#header .innerHeader .headerRight {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: var(--white);
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#header .contactBox {
+    position: fixed;
+    right: calc(50px + 50px); top: calc(50px + 50px);
+    border-radius: 10px;
+    border: 1px solid #a0a2af;
+    background-color: var(--birght);
+}
+#header .contactBox .ctTlt {
+    display: block;
+    padding: 24px 48px 12px 24px;
+    font-size: 24px;
+}
+#header .contactBox p {
+    padding: 0 48px 0 24px;
+    font-size: .9em;
+}
+#header .contactBox .ctList {
+    padding: 0 48px 24px 24px;
+}
+#header .contactBox .ctList li a {
+    display: block;
+    margin: 6px auto;
+    font-size: .9em;
+}
+
+
+
+/************** nav - bottom fixed **************/
+#nav {
+    position: fixed;
+    left: 50%; bottom: 48px;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
+    z-index: 9999;
+}
+#nav .navCtr {
+    background: var(--white);
+    border: 1px solid #000;
+    padding: 16px 24px;
+    border-radius: 28px;
+}
+#nav .navCtr a:nth-child(2n) {
+    margin: 0 16px;
+}
+
+#nav .navCtr a {
+    transition: all 0.3s;
+}
+#nav .navCtr a:focus,
+#nav .navCtr a:hover{
+    font-weight: 600;
+}
+#nav li a {
+    width: 80px; 
+    transition: all 0.3s;
+}
+#nav.is-active li a {
+    width: 30px; 
+}
+
+
+
+/************** Gird **************/
+.grid-10 {
+    width: 128rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 4rem;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+    align-items: center;
+    /* align-items: baseline; */
+    /* justify-content: center; */
+}
+.grid-1 { grid-column: span 1;}
+.grid-2 { grid-column: span 2;}
+.grid-3 { grid-column: span 3;}
+.grid-4 { grid-column: span 4;}
+.grid-5 { grid-column: span 5;}
+.grid-6 { grid-column: span 6;}
+.grid-7 { grid-column: span 7;}
+
+.secTlt {
+    font-size: 36px;
+    font-size: clamp(20px, 2rem, 24px);
+    margin-bottom: 36px;
+    font-weight: 600;
+}
+
+/* main Section */
+#main {
+    width: 100%; height: 100vh;
+    overflow: hidden;
+}
+#innerMain {
+    position: relative;
+    width: 100%; height: 100%;
+    padding: 1rem;
+    /* white-space: nowrap; */
+    background-color: var(--dark);
+}
+#innerMain .mainTxt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#innerMain .mainTxt span {
+    display: inline-block;
+    margin: 6px 0;
+    padding: 18px 24px;
+    font-size: 5em;
+    font-weight: 700;
+    color: rgb(154, 229, 154);
+    text-align: center;
+    border-radius: 1em;
+    line-height: 1;
+    cursor: default;
+    transition: ease-out 0.3s;
+}
+#innerMain .mainTxt span.beige {color: beige;}
+#innerMain .mainTxt span.purple {color: plum ;}
+#innerMain .mainTxt span.thin {font-weight: 100;}
+#innerMain .mainTxt span.strong {font-weight: 900;}
+#innerMain .mainTxt span {font-family: 'SUIT Variable', 'SUIT', 'sans-serif';}
+#innerMain .mainTxt span:hover {
+    background: palegreen;
+    color: var(--dark);
+}
+#innerMain .mainTxt span.beige:hover { background: beige}
+#innerMain .mainTxt span.purple:hover { background: plum}
+
+/************** Intro **************/
+#intro {
+    width: 100%; height: 100%;
+    overflow: hidden;
+    /* background-color: wheat; */
+}
+#intro article {
+    align-items: center;
+    justify-content: center;
+}
+#intro .mypic {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+#intro .introList {
+    /* width: 90%; */
+}
+#intro .introList .tlt b {
+    font-weight: 600;
+}
+#intro .introList .introTxt p {
+    margin: 36px 0;
+    font-size: clamp(24px, 2.8rem, 28px);
+    line-height: 1.7;
+    font-weight: 100;
+    word-break:keep-all;
+    background: #eee;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#intro .introList a {
+    font-weight: 600;
+}
+
+
+
+/************** Projects **************/
+#project {
+    /* overflow: hidden; */
+}
+#project #proItem0 {
+    padding-bottom: 0;
+}
+#project .grid {
+    /* padding: 0; */
+    padding: 8rem 0;
+}
+#project .proItem {
+    width: 100%; min-height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--birght);
+    border-top: 1px solid var(--dark);
+}
+#project #proItem1 {
+    padding-top: 8rem;
+    border-top: 0;
+}
+#project .imgBox img {
+    display: block;
+    width: 100%;
+}
+#project .txtBox {
+    width: 90%;
+}
+#project .txtBox h2.proTlt {
+    font-size: 48px;
+    font-weight: 900;
+}
+#project .txtBox p {
+    margin: 48px auto 36px;
+    font-size: .9em;
+    line-height: 1.8;
+    line-height: 2;
+    letter-spacing: -.2px;
+}
+#project .txtBox p.skill {
+    margin: 0;
+}
+#project .txtBox p.skill span {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0 8px;
+    border-radius: 3px;
+    background-color: var(--txt);
+    color: #f9f9f9;
+}
+#project .txtBox .subBox {
+    margin: 36px auto 0;
+}
+#project .txtBox .subBox {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
+/************** footer **************/
+#footer {
+    position: relative;
+    width: 100%; height: 100vh;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+#footer .contactBox p {
+    font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
+    font-size: 14rem;
+    font-size: clamp(120px, 24rem, 220px);
+    font-weight: 900;
+    letter-spacing: -1.3rem;
+}
+#footer .contactBox b {
+    font-size: 36px;
+}
+#footer .contactBox ul li {
+    margin: 36px 0;
+}
+#footer .contactBox ul li a {
+    position: relative;
+    display: block;
+    max-width: 250px;
+    padding: 24px 12px;
+    font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+    box-shadow: 3px 3px 0 4px #000;
+    transition: all 0.3s;
+}
+#footer .contactBox ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 0; height: 100%;
+    background-color: #000;
+    transition: all 0.4s;
+    z-index: -1;
+}
+#footer .contactBox ul li a:hover {
+    color: var(--white);
+    /* box-shadow: 3px 3px 0 4px var(--white); */
+}
+#footer .contactBox ul li a:hover::after {
+    left: 0; top: 0;
+    width: 100%;
+}
+#footer .copyTxt {
+    position: absolute;
+    right: 48px; bottom: 48px;
+    color: #999;
+    font-size: 14px;
+}
+
+.none, canvas {
+    display: none;
+}

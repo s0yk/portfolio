@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s0yk :: Portfolio</title>
+
+    <!-- webfont -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/webfonts.css">
+    
+    <!-- CSS :: Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    
+    <!-- j-Query -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.1"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- header -->
+        <header id="header">
+            <ul class="innerHeader">
+                <li class="headerLeft mo">Web Portfolio</li>
+                <li class="headerCtr"><a href="http://s0yk.com">s0yk</a></li>
+                <li class="headerRight mo"><a href="mailto:">📮</a></li>
+            </ul>
+            <div class="contactBox none">
+                <div class="innerCt">
+                    <b class="ctTlt">
+                        CONTACT s0yk. <br>
+                        어쩌구저쩍 이곳으로 연락주세요! <br> memememememe...
+                    </b>
+                    <ul class="ctList">
+                        <li><a href="mailto:">kshm93@naver.com</a></li>
+                        <li><a href="tel:">+82-10-9347-4752</a></li>
+                        <!-- <li><a href="https://github.com/s0yk" target="_blank">github</a></li> -->
+                        <li><a href="https://www.instagram.com/s0yk_/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- nav -->
+        <nav id="nav">
+            <div class="innerNav">
+                <div class="navCtr">
+                    <a href="#wrap">HOME</a>
+                    <a href="#project">PROJECTS</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <main id="main">
+            <div id="innerMain">
+                <div class="mainTxt">
+                    <span class="thin">WebStandards</span>
+                    <span>W3C</span>
+                    <span class="strong purple">UI</span>
+                    <span class="strong">UX</span>
+                    <span>Figma</span>
+                    <span class="strong purple">Performance</span>
+                    <span>Develop</span>
+                    <span class="strong">CrossBrowsing</span>
+                    <span class="strong">HTML</span>
+                    <span>CSS</span>
+                    <span class="strong purple">JavaScript</span>
+                    <span>j-Query</span>
+                    <span class="thin">GSAP</span>
+                    <span class="purple">Web</span>
+                    <span class="strong suit beige">I'm WebPublisher</span>
+                    <span class="thin">Design</span>
+                    <span class="strong">Bootstrap</span>
+                    <span class="thin purple">ResponsiveWeb</span>
+                    <span class="purple">Interactive</span>
+                    <span class="strong">Zeplin</span>
+                    <span class="purple">Photoshop</span>
+                    <span class="thin">XD</span>
+                    <span>Illustrator</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- intro -->
+        <section id="intro">
+            <article class="grid grid-10">
+                <div class="grid-4">
+                    <img src="http://s0yk.com/img/pro.jpeg" alt="" class="mypic mo">
+                </div>
+                <div class="grid-6 introList">
+                    <p class="tlt none">디자인과 기술을 조화시키는 웹 퍼블리셔 <b>김소연</b>입니다.</p>
+                    <b class="secTlt">About s0yk.</b>
+                    <div class="none">
+                        <dl>
+                            <dt>NAME.</dt><dd>김소연</dd>
+                        </dl>
+                        <dl>
+                            <dt>PHONE.</dt><dd>+82-10-9347-4752</dd>
+                        </dl>
+                        <dl>
+                            <dt>E-MAIL.</dt><dd>kshm93@naver.com</dd>
+                        </dl>
+                        <dl>
+                            <dt>ADDRESS.</dt><dd>서울시 강북구</dd>
+                        </dl>
+                        <dl>
+                            <dt>RESUME.</dt><dd>Resume.pdf</dd><dd>Portfolio.pptx</dd>
+                        </dl>
+                    </div>
+                    <div class="introTxt">
+                        <p>
+                            안녕하세요, 김소연입니다. <br><br>
+                            웹 퍼블리셔로서 다양한 프로젝트를 진행하였습니다. <br class="mo">
+                            사용자 친화적인 UI·UX를 구현하고, 웹 표준을 준수하며 HTML, CSS, Java Script 등 다양한 기술을 활용해 작업하고 있습니다. 디자이너와 개발자간의 원활한 소통을 통해 더 나은 결과물을 만들고 지속적으로 성장하고 있습니다. <br><br>
+                            <p>현재는 React와 GSAP를 관심있게 공부하고 있습니다. <br>제 이야기가 더 궁금하다면 <a href="cv.pdf" target="_blank">여기</a>서 확인해주세요!</p>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- project -->
+        <section id="project">
+            <article id="proItem0" class="grid grid-10 mo">
+                    <b class="secTlt">Projects.</b>
+            </article>
+            <article id="proItem1" class=" proItem">
+                <a href="#" onclick="prep()" class="grid grid-10">
+                    <div class="grid-5 txtBox">
+                        <h2 class="proTlt">Kasina OnlineStore Renewal</h2>
+                        <div class="grid-5 imgBox po">
+                            <img src="img/work/kasinaRenewal.png" alt="">
+                        </div>
+                        <div class="subBox po">
+                            <span>‘23. 01. ~ ‘23. 04.</span>
+                            <span>Plan &amp; Publishing</span>
+                            <span>Kasina</span>
+                        </div>
+                        <p>카시나에서는 온라인스토어 내의 다양한 문제를 해결하고자 리뉴얼을 진행했습니다. <br><br>
+                            주요페이지를 기획하고 디자인과 퍼블리싱을 진행하였으며, 하이브리드 앱이 출시됨에 따라 앱의 특성을 이용하여 반응형 퍼블리싱을 진행하였습니다. 특히 웹과 모바일의 특징을 고려하여 영역별로 구조를 변경하는 작업을 진행하기도 했습니다. 크로스 브라우징을 강화하여 일관성있게 보이도록 작업하였으며, 구조적인 변경을 통해 SEO 최적화, 다양한 검색 엔진에서도 노출될 수 있도록 개선하였습니다.</p>
+                        <p class="skill"><span>XD</span><span>HTML</span><span>CSS</span><span>Java Script</span><span>j-Query</span></p>
+                        <div class="subBox mo">
+                            <span>‘23. 01. ~ ‘23. 04.</span>
+                            <span>Plan &amp; Publishing</span>
+                            <span>Kasina</span>
+                        </div>
+                    </div>
+                    <div class="grid-5 imgBox mo">
+                        <img src="img/work/kasinaRenewal.png" alt="">
+                    </div>
+                </a>
+            </article>
+            <article id="proItem2" class="grid grid-10 proItem">
+                <a href="#" onclick="prep()" class="grid grid-10">
+                    <div class="grid-5 txtBox">
+                        <h2 class="proTlt">Kasina OnlineStore Redesign</h2>
+                        <div class="grid-5 imgBox po">
+                            <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="subBox po">
+                            <span>‘22. 09. ~ ‘22. 12.</span>
+                            <span>Publishing</span>
+                            <span>Kasina</span>
+                        </div>
+                        <p>카시나는 국내 스트리트 브랜드 편집샵입니다.<br>다양한 콜라보 상품과 한정판 스니커즈, 개성있는 브랜드들을 취급하고 있습니다. <br><br>
+                            XD와 Figma를 이용하여 레이아웃을 리디자인하고 퍼블리싱을 진행하였으며 스타일정의가 이루어지지 않은 UI가 대부분이였기 때문에 이 부분에 대해 리디자인하였습니다. 불필요한 HTML코드를 정리하고 중복되어 충돌되는 CSS 스타일도 정리, 사용자 편의성을 가질 수 있는 사이즈가이드 또는 프로모션 배너 등 간단한 기능들을 JavaScript로 구현하였습니다. </p>
+                        <p class="skill"><span>XD</span><span>HTML</span><span>CSS</span><span>Java Script</span><span>j-Query</span></p>
+                        <div class="subBox mo">
+                            <span>‘22. 09. ~ ‘22. 12.</span>
+                            <span>Publishing</span>
+                            <span>Kasina</span>
+                        </div>
+                    </div>
+                    <div class="grid-5 imgBox mo">
+                        <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </a>
+            </article>
+            <article id="proItem4" class="grid grid-10 proItem">
+                <a href="#" onclick="prep()" class="grid grid-10">
+                    <div class="grid-5 txtBox">
+                        <h2 class="proTlt">whykeykeysoft</h2>
+                        <div class="grid-5 imgBox po">
+                            <img src="img/work/whykeykeysoft.png" alt="">
+                        </div>
+                        <div class="subBox po">
+                            <span>'21. 02. ~ '21. 04.</span>
+                            <span>Desgin &amp; Publishing</span>
+                            <span>whykeykeysoft</span>
+                        </div>
+                        <p>와이키키소프트는 보안 인증 솔루션을 개발하는 한국의 소프트웨어 회사입니다. <br><br>
+                            기획 시 회사의 핵심 기술과 서비스에 대해 직관적으로 표현하고자 프로세스를 도식화하여 시각적 이해를 증대시키고 페이지 전체를 하드코딩으로 작성 및 최적화된 반응형 UI로 구현하였습니다. 회사 소식과 기술의 트렌드를 알리고자 게시판을 넣었으며 구축 시 내부 개발자와 협업 진행, 프로토타입 작성 후 기능에 사용할 스택 선정 및 작성 테스트와 피드백을 진행하였습니다.</p>
+                        <p class="skill"><span>Photoshop</span><span>HTML</span><span>CSS</span><span>Java Script</span><span>j-Query</span></p>
+                        <div class="subBox mo">
+                            <span>'21. 02. ~ '21. 04.</span>
+                            <span>Desgin &amp; Publishing</span>
+                            <span>whykeykeysoft</span>
+                        </div>
+                    </div>
+                    <div class="grid-5 imgBox mo">
+                        <img src="img/work/whykeykeysoft.png" alt="">
+                    </div>
+                </a>
+            </article>
+            <article id="proItem5" class="grid grid-10 proItem">
+                <a href="#" onclick="prep()" class="grid grid-10">
+                    <div class="grid-5 txtBox">
+                        <h2 class="proTlt">Ydentity2.0 App</h2>
+                        <div class="grid-5 imgBox po">
+                            <img src="img/work/ydentityApp.png" alt="">
+                        </div>
+                        <div class="subBox po">
+                            <span>‘20. 05. ~ ‘20. 09.</span>
+                            <span>Desgin</span>
+                            <span>whykeykeysoft</span>
+                        </div>
+                        <p>Ydentity2.0 App은 생체인증과 OTP인증을 도울 수 있는 앱입니다. <br><br>
+                            Photoshop을 이용하여 앱의 디자인을 작성하고 Zeplin을 이용하여 디자인 시안을 개발자와 공유하여 협업을 진행했습니다. 기획과 정책관련하여 많은 수정이 있어 리뉴얼을 통해 UIUX를 확장하고 성장시켰습니다. 사용자의 피드백과 타사 앱과 비교하며 UI를 개편하였고, 각 운영체제별로 일관된 디자인을 표현하고자 가이드라인을 구축하고 기기별 스크린에 대응하였습니다. 또한 개발 단계 및 배포 전 개발자와 원활한 의사소통으로 빠른 피드백을 처리하였습니다.</p>
+                        <p class="skill"><span>Photoshop</span><span>Illustrator</span></p>
+                        <div class="subBox mo">
+                            <span>‘20. 05. ~ ‘20. 09.</span>
+                            <span>Desgin</span>
+                            <span>whykeykeysoft</span>
+                        </div>
+                    </div>
+                    <div class="grid-5 imgBox mo">
+                            <img src="img/work/ydentityApp.png" alt="">
+                    </div>
+                </a>
+            </article>
+            <article id="proItem6" class="grid grid-10 proItem">
+                <a href="#" onclick="prep()" class="grid grid-10">
+                    <div class="grid-5 txtBox">
+                        <h2 class="proTlt">Ydentity2.0 Portal</h2>
+                        <div class="grid-5 imgBox po">
+                            <img src="img/work/ydentityPortal.png" alt="">
+                        </div>
+                        <div class="subBox po">
+                            <span>‘20. 05. ~ ‘20. 09.</span>
+                            <span>Desgin &amp; Publishing</span>
+                            <span>whykeykeysoft</span>
+                        </div>
+                        <p>Ydentity2.0은 와이키키소프트에서 개발한 차세대 디지털 인증 솔루션입니다. <br>
+                            이 솔루션은 비밀번호 없이 생체인증으로 인증하며, 금융, 의료, 인증 시스템 등에서 신원 도용을 방지하고 개인정보 보호를 강화하는데 중점을 두고 있습니다. <br><br>
+                            Ydentity2.0 Portal은 관리자와 사용자로 나뉘어져 있으며, 그룹웨어 및 대시보드 레퍼런스를 참고하여 디자인을 작성했습니다. UI라이브러리인 부트스트랩을 이용하여 CSS를 정의, 커스텀하고 지속적인 유지보수를 통하여 디자인을 개선하였습니다. 다양한 인증방법을 통한 로그인 방식을 개선하고 인증방법이 다양해짐에 따라 각 인증 기기의 아이콘을 디자인하고, 타임리프를 이용하여 레이아웃을 나누고 부트스트랩으로 css스타일을 정의했습니다. </p>
+                        <p class="skill"><span>Photoshop</span><span>Illustrator</span><span>HTML</span><span>CSS</span><span>j-Query</span><span>Bootstrap</span><span>Thymeleaf</span></p>
+                        <div class="subBox mo">
+                            <span>‘20. 05. ~ ‘20. 09.</span>
+                            <span>Desgin &amp; Publishing</span>
+                            <span>whykeykeysoft</span>
+                        </div>
+                    </div>
+                    <div class="grid-5 imgBox mo">
+                        <img src="img/work/ydentityPortal.png" alt="">
+                    </div>
+                </a>
+            </article>
+        </section>
+
+        <!-- footer -->
+        <footer id="footer">
+            <article class="grid grid-10">
+                <div class="grid-7 contactBox">
+                    <p class="contactTlt">
+                        <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                        <br>
+                        <span>s</span><span>0</span><span>y</span><span>k</span><span>.</span>
+                    </p>
+                    <!-- <p>s0yk<br>Portfolio.</p> -->
+                </div>
+                <div class="grid-3 contactBox">
+                    <!-- <b>CONTACT ME.</b> -->
+                    <ul>
+                        <li><a href="mailto:">kshm93@naver.com</a></li>
+                        <li><a href="tel:">+82-10-9347-4752</a></li>
+                        <li><a href="https://github.com/s0yk" target="_blank">github</a></li>
+                        <li><a href="https://www.instagram.com/s0yk_/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </article>
+            <span class="copyTxt">© s0yk 2024</span>
+            <div id="contact"></div>
+        </footer>
+    </div>
+
+    <!-- main Title Effect -->
+    <script>
+        // gsap.registerPlugin(SplitText);
+
+        gsap.set('.mainTxt span', {opacity: 1});
+
+        const headlineSplit = new SplitType('.mainTxt span', {types: 'words', wordsClass: 'word', protect: 'sup'});
+
+        gsap.from(headlineSplit.words, {
+            y: -300,
+            opacity: 0,
+            rotation: "random(10, 100)",
+            stagger: 0.06,
+            duration: 1,
+            ease: "back",
+            ease: "bounce"
+        })
+
+        // recognizes an extra "protect" property on the vars object that is a selector for words you want NOT included in the split.
+        function protectedSplit(target, vars) {
+            let protected = gsap.utils.toArray(vars.protect || "").map(el => {
+                return {
+                    el: el,
+                    innerHTML: el.innerHTML
+                }
+            });
+            let split = new SplitText(target, vars);
+            protected.forEach(data => {
+                let appendTo;
+                gsap.utils.toArray(data.el.children).forEach((word, i) => {
+                    let index = split.words.indexOf(word);
+                    if (index >= 0) {
+                        split.words.splice(index, 1);
+                        if (index > 0 && !appendTo) {
+                            appendTo = split.words[index-1];
+                        }
+                    }
+                });
+                data.el.innerHTML = data.innerHTML;
+                if (appendTo) {
+                    appendTo.appendChild(data.el)
+                }
+            });
+            return split;
+        }
+    </script>
+
+    <!-- intro Txt Effect -->
+    <script>
+        const splitTxt = new SplitType('.introTxt p', {types: 'lines, words, chars',});
+
+        const tltt = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#intro',
+                start: 'top',
+                end: '+=200%',
+                pin: true,
+                scrub: 1
+            }
+        });
+        tltt.to(splitTxt.chars, {
+            color: '#141617',
+            stagger: 1,
+        }); 
+    </script>
+
+    <!-- project Section -->
+    <script>
+        gsap.utils.toArray(".proItem").forEach((panel, i) => {
+            ScrollTrigger.create({
+                trigger: panel,
+                start: "top top",
+                pin: true, 
+                pinSpacing: false
+            });
+        });
+    </script>
+
+    <!-- smooth -->
+    <script>
+        const lenis = new Lenis();
+        
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+
+    <!-- nav hidden -->
+    <script>
+        const showNav = gsap.from("#nav", { 
+        yPercent: +200,
+        paused: true,
+        duration: 0.2
+    }).progress(1);
+
+    ScrollTrigger.create({
+        start: "top top",
+        end: 99999,
+        onUpdate: (self) => {
+            self.direction === -1 ? showNav.play() : showNav.reverse()
+        }
+    });
+    </script>
+
+    <!-- Footer Section -->
+    <script>
+        const contactAni = gsap.timeline();
+        contactAni.from("#footer .contactTlt span", {
+            autoAlpha: 0,
+            y: -500,
+            duration: 1,
+            ease: "bounce.out",
+            stagger: {
+                amount: 5,
+                from: "random"
+            }
+        })
+
+        ScrollTrigger.create({
+            animation: contactAni,
+            trigger: "#footer",
+            start: "top top",
+            end: "+=500",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            markers: false
+        });
+    </script>
+
+    <script>
+        function prep(){
+            alert("Preparing a detailed project view.");
+        }
+    </script>
+</body>
+</html>

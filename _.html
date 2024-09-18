@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s0yk :: Portfolio</title>
+
+    <!-- webfont -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/webfonts.css">
+    
+    <!-- CSS :: Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- j-Query -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.1"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- header -->
+        <header id="header">
+            <ul class="innerHeader">
+                <li class="headerLeft">Web Portfolio</li>
+                <li class="headerCtr">s0yk</li>
+                <li class="headerRight"><a href="mailto:">📮</a></li>
+            </ul>
+            <div class="contactBox none">
+                <div class="innerCt">
+                    <b class="ctTlt">
+                        CONTACT s0yk. <br>
+                        어쩌구저쩍 이곳으로 연락주세요! <br> memememememe...
+                    </b>
+                    <ul class="ctList">
+                        <li><a href="mailto:">kshm93@naver.com</a></li>
+                        <li><a href="tel:">+82-10-9347-4752</a></li>
+                        <!-- <li><a href="https://github.com/s0yk" target="_blank">github</a></li> -->
+                        <li><a href="https://www.instagram.com/s0yk_/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- nav -->
+        <nav id="nav">
+            <div class="innerNav">
+                <div class="navCtr">
+                    <a href="#wrap">HOME</a>
+                    <a href="#project">PROJECTS</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <main id="main">
+            <div id="innerMain">
+                <span class="thin">Develop</span>
+                <span>Web Standards</span>
+                <span class="thin">UI</span>
+                <span>UX</span>
+                <span class="strong">Cross Browsing</span>
+                <span class="strong">Publisher</span>
+                <span>Web Design</span>
+                <span class="strong">Responsive web</span>
+                <span class="strong">HTML</span>
+                <span class="strong">CSS</span>
+                <span>Java Script</span>
+                <span class="thin">j-Query</span>
+                <span>Bootstrap</span>
+                <span class="thin">Photoshop</span>
+                <span class="thin">Illustrator</span>
+                <span>Figma</span>
+                <span class="thin">XD</span>
+                <span class="strong">Zeplin</span>
+            </div>
+            <div id="box" class="none">
+                <h1 id="txt">Create a sensual UI and UX that cares about users. Provide optimal user experience and successfully drive projects through seamless collaboration.</h1>
+            </div>
+        </main>
+
+        <!-- intro -->
+        <section id="intro">
+            <article class="grid grid-10">
+                <div class="grid-4">
+                    <img src="http://s0yk.com/img/pro.jpg" alt="" class="mypic">
+                </div>
+                <div class="grid-6 introList">
+                    <p class="tlt none">디자인과 기술을 조화시키는 웹 퍼블리셔 <b>김소연</b>입니다.</p>
+                    <p class="tlt">About s0yk.</p>
+                    <div class="none">
+                        <dl>
+                            <dt>NAME.</dt><dd>김소연</dd>
+                        </dl>
+                        <dl>
+                            <dt>PHONE.</dt><dd>+82-10-9347-4752</dd>
+                        </dl>
+                        <dl>
+                            <dt>E-MAIL.</dt><dd>kshm93@naver.com</dd>
+                        </dl>
+                        <dl>
+                            <dt>ADDRESS.</dt><dd>서울시 강북구</dd>
+                        </dl>
+                        <dl>
+                            <dt>RESUME.</dt><dd>Resume.pdf</dd><dd>Portfolio.pptx</dd>
+                        </dl>
+                    </div>
+                    <div class="introTxt">
+                        <p>
+                            안녕하세요,김소연입니다. <br><br>
+                            웹 퍼블리셔로서 다양한 프로젝트에서 사용자 친화적인 UI/UX를 구현해왔습니다. <br><br>
+                            웹 표준을 준수하며, HTML, CSS, JavaScript 등 다양한 기술을 활용해 사용자 경험을 최적화하는 데 주력하고 있습니다. 디자이너와 개발자 간의 원활한 소통을 통해 더 나은 결과물을 만들어내고, 최신 웹 트렌드를 반영하여 지속적으로 성장하고 있습니다.
+                            <a href="cv.pdf" target="_blank">view more</a>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- project -->
+        <section id="project">
+            <article id="proItem1" class="proItem">
+                <a href="#" onclick="prep()">
+                    <img src="http://s0yk.com/img/work/ydentityPortal.png" alt="" class="thum">
+                    <h2 class="proTlt">Kasina OnlineStore Renewal</h2>
+                    <p class="dark">카시나 온라인스토어 리뉴얼</p>
+                </a>
+            </article>
+            <article id="proItem2" class="proItem">
+                <a href="#" onclick="prep()">
+                    <img src="http://s0yk.com/img/work/ydentityPortal.png" alt="" class="thum">
+                    <h2 class="proTlt">Kasina OnlineStore Redesign</h2>
+                    <p class="dark">카시나 온라인스토어 리디자인</p>
+                </a>
+            </article>
+            <!-- <article id="proItem3" class="proItem none">
+                <a href="#" onclick="prep()">
+                    <img src="http://s0yk.com/img/work/ydentityPortal.png" alt="" class="thum">
+                    <h2 class="proTlt dark">안면인증 for Windows</h2>
+                    <p>Windows환경에서 FIDO, 안면인증으로 사용자를 인증하는 프로그램</p>
+                </a>
+            </article> -->
+            <article id="proItem4" class="proItem">
+                <a href="#" onclick="prep()">
+                    <img src="http://s0yk.com/img/projects/whykeykey.png" alt="" class="thum">
+                    <h2 class="proTlt">WhykeykeySoft</h2>
+                    <p class="dark">와이키키소프트 자사 홈페이지</p>
+                </a>
+            </article>
+            <article id="proItem5" class="proItem">
+                <a href="#" onclick="prep()">
+                    <img src="http://s0yk.com/img/projects/app.jpg" alt="" class="thum">
+                    <h2 class="proTlt dark">Ydentity2.0 App</h2>
+                    <p>생체인증과 OTP인증을 돕는 App</p>
+                </a>
+            </article>
+            <article id="proItem6" class="proItem">
+                <a href="#" onclick="prep()">
+                    <img src="http://s0yk.com/img/projects/portal.jpg" alt="" class="thum">
+                    <h2 class="proTlt">Ydentity2.0 Portal</h2>
+                    <p class="dark">생체인증과 등록된 기기를 관리 및 조회할 수 있는 관리자, 사용자 포탈</p>
+                </a>
+            </article>
+        </section>
+
+        <!-- footer -->
+        <footer id="footer">
+            <article class="grid grid-10">
+                <div class="grid-7 contactBox">
+                    <p class="contactTlt">
+                        <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                        <br>
+                        <span>s</span><span>0</span><span>y</span><span>k</span><span>.</span>
+                    </p>
+                    <!-- <p>s0yk<br>Portfolio.</p> -->
+                </div>
+                <div class="grid-3 contactBox">
+                    <!-- <b>CONTACT ME.</b> -->
+                    <ul>
+                        <li><a href="mailto:">kshm93@naver.com</a></li>
+                        <li><a href="tel:">+82-10-9347-4752</a></li>
+                        <li><a href="https://github.com/s0yk" target="_blank">github</a></li>
+                        <li><a href="https://www.instagram.com/s0yk_/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </article>
+            
+            <span class="copyTxt">© s0yk 2024</span>
+        </footer>
+    </div>
+    <div id="contact"></div>
+
+    <!-- main Title Effect -->
+
+    <!-- intro Txt Effect -->
+    <script>
+        const splitTxt = new SplitType('.introTxt p', {types: 'lines, words, chars',});
+
+        const tltt = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#intro',
+                start: 'top',
+                end: '+=200%',
+                pin: true,
+                scrub: 1
+            }
+        });
+        tltt.to(splitTxt.chars, {
+            color: '#141617',
+            stagger: 1,
+        }); 
+    </script>
+
+    <!-- project Section -->
+    <script>
+        gsap.utils.toArray(".proItem").forEach((panel, i) => {
+            ScrollTrigger.create({
+                trigger: panel,
+                start: "top top",
+                pin: true, 
+                pinSpacing: false
+            });
+        });
+    </script>
+
+    <!-- smooth -->
+    <script>
+        const lenis = new Lenis();
+        
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+
+    <!-- nav hidden -->
+    <script>
+        const showNav = gsap.from("#nav", { 
+        yPercent: +200,
+        paused: true,
+        duration: 0.2
+    }).progress(1);
+
+    ScrollTrigger.create({
+        start: "top top",
+        end: 99999,
+        onUpdate: (self) => {
+            self.direction === -1 ? showNav.play() : showNav.reverse()
+        }
+    });
+    </script>
+
+    <!-- Footer Section -->
+    <script>
+        const contactAni = gsap.timeline();
+        contactAni.from("#footer .contactTlt span", {
+            autoAlpha: 0,
+            y: -500,
+            duration: 1,
+            ease: "bounce.out",
+            stagger: {
+                amount: 5,
+                from: "random"
+            }
+        })
+
+        ScrollTrigger.create({
+            animation: contactAni,
+            trigger: "#footer",
+            start: "top top",
+            end: "+=500",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            markers: false
+        });
+    </script>
+
+    <script>
+        function prep(){
+            alert("Preparing a detailed project view.");
+        }
+    </script>
+</body>
+</html>

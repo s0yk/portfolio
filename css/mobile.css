@@ -1,0 +1,145 @@
+@media screen and (max-width: 768px) {
+    .mo {display: none !important;}
+    .po {display: inline;}
+
+    #header {
+        top: 24px;
+        font-size: 14px;
+    }
+    #nav {
+        width: 100%;
+        bottom: 24px;
+        font-size: 12px;
+    }
+    #nav .innerNav {
+        display: flex;
+        justify-content: center;
+    }
+    #nav .navCtr {
+        padding: 12px 16px;
+    }
+    #nav .navCtr a:nth-child(2n) {
+        margin: 0 8px;
+    }
+
+    /************** Gird **************/
+    .grid-10 {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0;
+        /* overflow: hidden; */
+    }
+    .secTlt {
+        font-size: 36px;
+        font-size: clamp(20px, 2rem, 24px);
+        margin-bottom: 36px;
+        font-weight: 600;
+    }
+
+    /* main Section */
+    #main {
+        width: 100%; 
+    }
+    #innerMian .mainTxt {
+        width: 90vw;
+    }
+    #innerMain .mainTxt span {
+        margin: 6px auto;
+        padding: 6px 12px;
+        font-size: 3.1em;
+    }
+
+
+
+    /************** Intro **************/
+    #intro {
+        width: 100%; height: auto;
+        overflow: auto;
+    }
+    #intro article {
+        align-items: center;
+        justify-content: center;
+    }
+    #intro .mypic {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    #intro .introList .tlt b {
+        font-weight: 600;
+    }
+    #intro .introList .introTxt p {
+        margin: 36px 0;
+        font-size: clamp(26px, 2rem, 28px);
+        line-height: 1.7;
+        font-weight: 100;
+        word-break: normal;
+        background: #eee;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    #intro .introList a {
+        font-weight: 600;
+    }
+
+
+
+    /************** Projects **************/
+    #project {
+        overflow: hidden;
+    }
+    #project #proItem0 {
+        padding-bottom: 0;
+    }
+    #project .grid {
+        padding: 12rem 0 36rem;
+    }
+    #project #proItem1 {
+        padding-top: 6rem;
+        border-top: 0;
+    }
+    #project .imgBox.po {
+        display: block !important;
+        margin: 24px auto 0;
+    }
+    #project .txtBox {
+        width: 100%;
+    }
+    #project .txtBox h2.proTlt {
+        font-size: 36px;
+    }
+    #project .txtBox p {
+        margin: 24px auto;
+        letter-spacing: -.3rem;
+    }
+    #project .txtBox p.skill span {
+        margin: 0 5px 5px 0;
+    }
+    #project .txtBox .subBox.po {
+        display: flex !important;
+        display: none !important;
+    }
+
+
+    /************** footer **************/
+    #footer article {
+        padding-top: 20rem;
+    }
+    #footer .contactBox p {
+        font-size: 30rem;
+    }
+    #footer .contactBox ul li {
+        margin: 24px 0;
+    }
+    #footer .contactBox ul li a {
+        display: block;
+        max-width: 100%;
+        padding: 16px 8px;
+        font-size: 14px;
+        box-shadow: 2px 2px 0 3px #000;
+    }
+    #footer .copyTxt {
+        right: 24px; bottom: 24px;
+    }
+}
