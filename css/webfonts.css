@@ -55,3 +55,7 @@
     font-weight: 900;
     font-display: normal;
 }
+@font-face {
+    font-family: 'PretendardVariable';
+    src: url('../webfonts/PretendardVariable.woff2') format('woff2');
+}
