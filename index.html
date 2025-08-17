@@ -30,55 +30,38 @@
 
 <body>
     <script>
-        alert("202508. 현재 작업중인 포트폴리오입니다.");
+        alert("현재 작업중인 포트폴리오입니다.");
     </script>
     <div id="wrap">
 
         <!-- header -->
-        <header id="header">
-            <ul class="innerHeader">
-                <li class="headerLeft mo">Web Portfolio</li>
-                <li class="headerCtr"><a href="http://s0yk.com">s0yk</a></li>
-                <li class="headerRight mo"><a href="mailto:">📮</a></li>
+        <header>
+            <ul class="inner-header">
+                <li class="mo">Web Portfolio</li>
+                <li><a href="http://s0yk.com">s0yk</a></li>
             </ul>
-            <div class="contactBox none">
-                <div class="innerCt">
-                    <b class="ctTlt">
-                        CONTACT s0yk. <br>
-                        어쩌구저쩍 이곳으로 연락주세요! <br> memememememe...
-                    </b>
-                    <ul class="ctList">
-                        <li><a href="mailto:">kshm93@naver.com</a></li>
-                        <li><a href="tel:">+82-10-9347-4752</a></li>
-                        <!-- <li><a href="https://github.com/s0yk" target="_blank">github</a></li> -->
-                        <li><a href="https://www.instagram.com/s0yk_/" target="_blank">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
         </header>
 
         <!-- nav -->
-        <nav id="nav">
-            <div class="innerNav">
-                <div class="navCtr">
-                    <a href="#wrap">HOME</a>
-                    <a href="#project">PROJECTS</a>
-                    <a href="#contact">CONTACT</a>
-                </div>
-            </div>
+        <nav>
+            <ul class="inner-nav">
+                    <li><a href="#wrap">HOME</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </nav>
 
         <!-- main -->
         <main id="main">
             <div id="innerMain">
                 <div class="mainTxt">
-                    <span class="strong suit beige">I'm Web Publisher.</span>
+                    <span class="strong suit">Create sensual UI/UX that think about the user's location. Collaboration with team members provide user experience.</span>
                 </div>
             </div>
         </main>
 
         <!-- intro -->
-        <section id="intro">
+        <section class="intro">
             <article class="grid grid-10">
                 <div class="grid-4">
                     <img src="./img/pro.jpeg" alt="" class="mypic mo">
@@ -86,23 +69,6 @@
                 <div class="grid-6 introList">
                     <p class="tlt none">디자인과 기술을 조화시키는 웹 퍼블리셔 <b>김소연</b>입니다.</p>
                     <b class="secTlt">About s0yk.</b>
-                    <div class="none">
-                        <dl>
-                            <dt>NAME.</dt><dd>김소연</dd>
-                        </dl>
-                        <dl>
-                            <dt>PHONE.</dt><dd>+82-10-9347-4752</dd>
-                        </dl>
-                        <dl>
-                            <dt>E-MAIL.</dt><dd>kshm93@naver.com</dd>
-                        </dl>
-                        <dl>
-                            <dt>ADDRESS.</dt><dd>서울시 강북구</dd>
-                        </dl>
-                        <dl>
-                            <dt>RESUME.</dt><dd>Resume.pdf</dd><dd>Portfolio.pptx</dd>
-                        </dl>
-                    </div>
                     <div class="introTxt">
                         <p>
                             안녕하세요, 김소연입니다. <br><br>
@@ -406,21 +372,29 @@
 
     <!-- main Title Effect -->
     <script>
-        // gsap.registerPlugin(SplitText);
+        const colors = ["#94c2da", "#203f9a", "#e7a0cc", "#e84797"];
+        const shuffled = gsap.utils.shuffle(colors.slice());
 
-        gsap.set('.mainTxt span', {opacity: 1});
+        const split = new SplitType(".mainTxt", {
+        types: "lines, words",
+        lineClass: "line",
+        wordClass: "word"
+        });
 
-        const headlineSplit = new SplitType('.mainTxt span', {types: 'words', wordsClass: 'word', protect: 'sup'});
+        // 줄(=line) 단위 색상
+        gsap.set(split.lines, {
+        color: (i) => shuffled[i % shuffled.length]
+        });
 
-        gsap.from(headlineSplit.words, {
-            y: -300,
-            opacity: 0,
-            rotation: "random(10, 100)",
-            stagger: 0.06,
-            duration: 1,
-            ease: "back",
-            ease: "bounce"
-        })
+        // 단어별 등장
+        gsap.from(split.words, {
+        y: -200,
+        opacity: 0,
+        rotation: () => gsap.utils.random(10, 100),
+        stagger: 0.04,
+        duration: 1,
+        ease: "bounce"
+        });
 
         // recognizes an extra "protect" property on the vars object that is a selector for words you want NOT included in the split.
         function protectedSplit(target, vars) {
@@ -457,7 +431,7 @@
 
         const tltt = gsap.timeline({
             scrollTrigger: {
-                trigger: '#intro',
+                trigger: '.intro',
                 start: 'top',
                 end: '+=200%',
                 pin: true,
@@ -465,7 +439,7 @@
             }
         });
         tltt.to(splitTxt.chars, {
-            color: '#141617',
+            color: '#1d1e20',
             stagger: 1,
         }); 
     </script>
