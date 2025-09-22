@@ -30,7 +30,7 @@
 
 <body>
     <script>
-        alert("현재 작업중인 포트폴리오입니다.");
+        // alert("현재 작업중인 포트폴리오입니다.");
     </script>
     <div id="wrap">
 
@@ -86,10 +86,10 @@
             <article id="proItem0" class="grid grid-10 mo">
                     <b class="secTlt">Projects.</b>
             </article>
-            <article id="proItem09" class=" proItem">
+            <article id="proItem10" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
-                        <h2 class="proTlt">복합지원 서비스</h2>
+                        <h2 class="proTlt">서민금융진흥원</h2>
                         <div class="grid-5 imgBox po">
                             <img src="img/work/.png" alt="">
                         </div>
@@ -98,8 +98,11 @@
                             <span>Publishing</span>
                             <span>ITPUB</span>
                         </div>
-                        <p>서민금융진흥원의 공공마이데이터 휴면예금 서비스 등 연계 프로젝트 입니다. <br><br>기존 화면에서 일부 수정과 신규 화면을 진행하였으며, 작업하는 화면 중 불필요한 구조에 대해 정리, 스타일 재정의를 진행하였습니다.</p>
-                        <p class="skill"><span>HTML</span><span>CSS</span><span>React</span><span>Next.js</span></p>
+                        <p>
+                            서민금융진흥원의 공공마이데이터 연계 프로젝트 입니다. <br><br>
+                            공공마이데이터 기반 복합지원 서비스 화면을 퍼블리싱했고, 휴면예금 찾아줌 서비스를 서민금융진흥원 디지털센터로 이관하는 작업을 진행했습니다. 이 과정에서 반응형 웹을 적용하여 다양한 환경에서 최적화된 사용자 경험을 제공했습니다. <br>서민금융진흥원 하이브리드 앱에 앱 리워드 기능을 도입하며 약 10여 개의 화면을 제작했습니다. 작업 과정 중 불필요한 구조를 정리하고 스타일을 재정의하여 코드의 효율성과 유지보수성을 강화했습니다.
+                        </p>
+                        <p class="skill"><span>HTML</span><span>CSS</span><span>Java Script</span></p>
                         <div class="subBox mo">
                             <span>‘25. 06. ~ ‘25. 08.</span>
                             <span>Publishing</span>
@@ -111,7 +114,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem09" class=" proItem">
+            <article id="proItem09" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">Bler</h2>
@@ -136,7 +139,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem08" class=" proItem">
+            <article id="proItem08" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">Publishing Guide</h2>
@@ -161,7 +164,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem07" class=" proItem">
+            <article id="proItem07" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">평생교육이용권</h2>
@@ -186,7 +189,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem06" class=" proItem">
+            <article id="proItem06" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">e-Apostille Service</h2>
@@ -211,7 +214,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem05" class=" proItem">
+            <article id="proItem05" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">Kasina OnlineStore Renewal</h2>
@@ -237,7 +240,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem04" class="grid grid-10 proItem">
+            <article id="proItem04" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">Kasina OnlineStore Redesign</h2>
@@ -263,7 +266,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem03" class="grid grid-10 proItem">
+            <article id="proItem03" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">whykeykeysoft</h2>
@@ -289,7 +292,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem02" class="grid grid-10 proItem">
+            <article id="proItem02" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">Ydentity2.0 App</h2>
@@ -315,7 +318,7 @@
                     </div>
                 </a>
             </article>
-            <article id="proItem01" class="grid grid-10 proItem">
+            <article id="proItem01" class="proItem">
                 <a href="#" onclick="prep()" class="grid grid-10">
                     <div class="grid-5 txtBox">
                         <h2 class="proTlt">Ydentity2.0 Portal</h2>
@@ -450,8 +453,10 @@
             ScrollTrigger.create({
                 trigger: panel,
                 start: "top top",
+                end: "+=100%",
                 pin: true, 
-                pinSpacing: false
+                pinSpacing: false,
+                anticipatePin: 1
             });
         });
     </script>
