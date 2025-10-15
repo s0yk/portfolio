@@ -70,6 +70,11 @@ span {
     cursor: default;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
 button {
     border: 0;
     background: none;
@@ -124,9 +129,9 @@ header .inner-header li {
 nav {
     position: fixed;
     left: 50%;
-    bottom: 48px;
+    bottom: 4.8rem;
     transform: translateX(-50%);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
     z-index: 9999;
 }
@@ -136,7 +141,7 @@ nav .inner-nav {
     gap: 1.6rem;
     align-items: center;
     background: var(--white);
-    border: 1px solid var(--border);
+    border: .1rem solid var(--border);
     padding: 1.6rem 2.4rem;
     border-radius: 2.8rem;
 }
@@ -149,7 +154,7 @@ nav .inner-nav a {
 
 
 /************** Gird **************/
-.grid-10 {
+.grid-wrap {
     width: 128rem;
     margin: 0 auto;
     display: grid;
@@ -158,8 +163,6 @@ nav .inner-nav a {
     padding-top: 16rem;
     padding-bottom: 16rem;
     align-items: center;
-    /* align-items: baseline; */
-    /* justify-content: center; */
 }
 
 .grid-1 {
@@ -178,7 +181,7 @@ nav .inner-nav a {
     grid-column: span 4;
 }
 
-.grid-5 {
+. {
     grid-column: span 5;
 }
 
@@ -235,29 +238,35 @@ nav .inner-nav a {
     font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
 }
 
+section .inner-conts {
+    width: 128rem;
+    margin: 0 auto;
+    padding: 16rem 0;
+    display: flex;
+    gap: 4rem;
+}
+
 /************** Intro **************/
-.intro {
+#intro {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.intro article {
+#intro .inner-conts {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.intro .mypic {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
+#intro .img-box {
+    width: 40%;
 }
 
-.intro .introList .tlt b {
+#intro .intro-wrap .tlt b {
     font-weight: 600;
 }
 
-.intro .introList .introTxt p {
+#intro .intro-wrap .intro-txt p {
     margin: 3.6rem 0;
     font-size: 2.4rem;
     line-height: 1.7;
@@ -269,7 +278,7 @@ nav .inner-nav a {
     -webkit-background-clip: text;
 }
 
-.intro .introList a {
+#intro .intro-wrap a {
     font-weight: 600;
 }
 
@@ -280,11 +289,16 @@ nav .inner-nav a {
     /* overflow: hidden; */
 }
 
-#project #proItem0 {
+#project #project-item0 {
     padding-bottom: 0;
 }
 
-#project .proItem {
+#project .inner-conts {
+    flex-direction: column;
+    align-items: start;
+}
+
+#project .project-item {
     width: 100%;
     min-height: 50vh;
     height: 100vh;
@@ -294,44 +308,62 @@ nav .inner-nav a {
     justify-content: center;
     flex-direction: column;
     background-color: var(--bg);
-    border-top: 1px solid var(--tit);
+    border-top: .1rem solid var(--tit);
 }
 
-#project *:nth-child(2) .proItem {
+#project .project-item a {
+    width: 128rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+}
+
+#project .project-item a .txt-box {
+    width: 50%;
+}
+
+#project .project-item a .img-box {
+    width: 50%;
+}
+
+
+#project *:nth-child(2) .project-item {
     padding-top: 8rem;
     border-top: 0;
 }
 
-#project .imgBox img {
+#project .img-box img {
     display: block;
     width: 100%;
 }
 
-#project .txtBox {
+#project .txt-box {
     width: 90%;
 }
 
-#project .txtBox h2.proTlt {
+#project .txt-box h2.tit {
     font-size: 4.8rem;
     color: var(--pri-dark);
     font-weight: 900;
 }
 
-#project .txtBox p {
+#project .txt-box p {
     margin: 4.8rem auto 3.6rem;
     font-size: 1.4rem;
     line-height: 1.8;
     line-height: 2;
-    letter-spacing: -.2px;
+    letter-spacing: -.02rem;
 }
 
-#project .txtBox p.skill {
+#project .txt-box p.skill {
     margin: 0;
     display: flex;
     gap: .4rem;
 }
 
-#project .txtBox p.skill span {
+#project .txt-box p.skill span {
     display: inline-block;
     padding: 0 .8rem;
     border-radius: .4rem;
@@ -339,15 +371,75 @@ nav .inner-nav a {
     color: #FFF;
 }
 
-#project .txtBox .subBox {
-    margin: 36px auto 0;
+#project .txt-box .info-box {
+    margin: 3.6rem auto 0;
     font-size: 1.2rem;
 }
 
-#project .txtBox .subBox {
+#project .txt-box .info-box {
     justify-content: space-between;
     align-items: center;
     display: flex;
+}
+
+
+/************** study **************/
+
+#study {
+}
+#study .inner-conts {
+    padding: 0;
+}
+#study .study-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 2.4rem;
+}
+#study .study-list .study-item a {
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #f0f0f0;
+    padding: 3.6rem 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.2rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#study .study-list .study-item a:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 1.2rem 1.6rem rgba(0, 0, 0, 0.1);
+}
+#study .study-list .study-item a * {
+    cursor: pointer;
+}
+#study .study-list .study-item a .num {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+#study .study-list .study-item a .tit {
+    margin: -.6rem 0 .6rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--pri-dark);
+    letter-spacing: -.05rem;
+}
+#study .study-list .study-item a .tag {
+    display: flex;
+    gap: .4rem;
+}
+#study .study-list .study-item a .tag span {
+    display: inline-block;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+    background-color: var(--sec);
+    color: #FFF;
+}
+#study .study-list .study-item a .desc {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--tit);
 }
 
 
@@ -357,74 +449,136 @@ nav .inner-nav a {
     width: 100%;
     height: 100vh;
     background-color: var(--bg);
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
 }
 
-#footer .contactBox p {
+#footer .inner-footer {
+    width: 128rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer .inner-footer .contact-box {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+#footer .contact-box p {
     font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
-    font-size: 14rem;
-    font-size: clamp(120px, 24rem, 220px);
+    font-size: 24rem;
     font-weight: 900;
     letter-spacing: -1.3rem;
     color: var(--pri);
     color: var(--sec-dark);
 }
 
-#footer .contactBox b {
-    font-size: 36px;
+#footer .contact-box b {
+    font-size: 3.6rem;
 }
 
-#footer .contactBox ul li {
-    margin: 36px 0;
+#footer .inner-footer .contact-list {
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
-#footer .contactBox ul li a {
+#footer .contact-list li {
+    margin: 3.6rem 0;
+}
+
+#footer .inner-footer .contact-list li a {
     position: relative;
     display: block;
-    max-width: 250px;
-    padding: 24px 12px;
+    max-width: 25rem;
+    padding: 2.4rem 1.2rem;
     font-family: 'SUIT Variable', 'SUIT', 'sans-serif';
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 1;
-    box-shadow: 3px 3px 0 4px var(--sec);
-    box-shadow: 3px 3px 0 4px var(--pri);
+    box-shadow: .3rem .3rem 0 .4rem var(--pri);
     transition: all 0.3s;
 }
 
-#footer .contactBox ul li a::after {
+#footer .inner-footer .contact-list li a::after {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 0;
     height: 100%;
-    background-color: var(--sec);
     background-color: var(--pri);
     transition: all 0.4s;
     z-index: -1;
 }
 
-#footer .contactBox ul li a:hover {
+#footer .inner-footer .contact-list li a:hover {
     color: var(--white);
     /* box-shadow: 3px 3px 0 4px var(--white); */
 }
 
-#footer .contactBox ul li a:hover::after {
+#footer .inner-footer .contact-list li a:hover::after {
     left: 0;
     top: 0;
     width: 100%;
 }
 
-#footer .copyTxt {
+#footer .copy {
     position: absolute;
-    right: 48px;
-    bottom: 48px;
+    right: 4.8rem;
+    bottom: 4.8rem;
     color: #999;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .none,
 canvas {
     display: none;
+}
+
+
+
+
+.toggle-input {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.toggle-input input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 3.6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: var(--border);
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.toggle-input input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.toggle-input input[type="checkbox"]:checked {
+    background-color: var(--pri);
+}
+
+.toggle-input input[type="checkbox"]:checked::before {
+    transform: translateX(1.6rem);
 }

@@ -80,11 +80,11 @@
         margin: 0 auto;
     }
 
-    #intro .introList .tlt b {
+    #intro .intro-wrap .tlt b {
         font-weight: 600;
     }
 
-    #intro .introList .introTxt p {
+    #intro .intro-wrap .intro-txt p {
         margin: 36px 0;
         line-height: 1.7;
         font-weight: 100;
@@ -95,7 +95,7 @@
         -webkit-background-clip: text;
     }
 
-    #intro .introList a {
+    #intro .intro-wrap a {
         font-weight: 600;
     }
 
@@ -106,7 +106,7 @@
         overflow: hidden;
     }
 
-    #project #proItem0 {
+    #project #project-item0 {
         padding-bottom: 0;
     }
 
@@ -114,33 +114,33 @@
         padding: 12rem 0 36rem;
     }
 
-    #project #proItem1 {
+    #project #project-item1 {
         padding-top: 6rem;
         border-top: 0;
     }
 
-    #project .imgBox.po {
+    #project .img-box.po {
         display: block !important;
         margin: 24px auto 0;
     }
 
-    #project .txtBox {
+    #project .txt-box {
         width: 100%;
     }
 
-    #project .txtBox h2.proTlt {
+    #project .txt-box h2.tit {
         font-size: 36px;
     }
 
-    #project .txtBox p {
+    #project .txt-box p {
         margin: 24px auto;
     }
 
-    #project .txtBox p.skill span {
+    #project .txt-box p.skill span {
         margin: 0 5px 5px 0;
     }
 
-    #project .txtBox .subBox.po {
+    #project .txt-box .info-box.po {
         display: flex !important;
         display: none !important;
     }
@@ -151,15 +151,15 @@
         padding-top: 20rem;
     }
 
-    #footer .contactBox p {
+    #footer .contact-box p {
         font-size: 30rem;
     }
 
-    #footer .contactBox ul li {
+    #footer .contact-box ul li {
         margin: 24px 0;
     }
 
-    #footer .contactBox ul li a {
+    #footer .contact-box ul li a {
         display: block;
         max-width: 100%;
         padding: 16px 8px;
@@ -167,7 +167,7 @@
         box-shadow: 2px 2px 0 3px #000;
     }
 
-    #footer .copyTxt {
+    #footer .copy {
         right: 24px;
         bottom: 24px;
     }
