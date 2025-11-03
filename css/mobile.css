@@ -5,7 +5,7 @@
 
 
     .mo {
-        display: block !important;
+        display: flex !important;
     }
 
     .po {
@@ -20,6 +20,10 @@
     header .inner-header {
         width: 100%;
         padding: 0 1.6rem;
+    }
+
+    header .inner-header li {
+        font-size: 1.4rem;
     }
 
 
@@ -79,7 +83,7 @@
         font-size: 2rem;
         line-height: 1.6;
         word-break: keep-all;
-        color: var(--tit);
+        /* color: var(--tit); */
         background: none;
     }
 
@@ -109,9 +113,10 @@
     }
 
     #project .txt-box h2.tit {
-        font-size: 2.8rem;
+        font-size: 3.2rem;
         color: var(--pri-dark);
         margin-bottom: 1.6rem;
+        font-weight: 700;
     }
 
     #project .txt-box p {
