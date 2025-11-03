@@ -1,174 +1,207 @@
+@charset "utf-8";
+
+/* 모바일 대응 :: 768px 이하 */
 @media screen and (max-width: 768px) {
+
+
     .mo {
-        display: none !important;
+        display: block !important;
     }
 
     .po {
-        display: inline;
+        display: none !important;
     }
 
-    #header {
-        top: 24px;
-        font-size: 14px;
+    header {
+        padding: 0;
+        top: 2.4rem;
     }
 
-    #nav {
+    header .inner-header {
         width: 100%;
-        bottom: 24px;
-        font-size: 12px;
+        padding: 0 1.6rem;
     }
 
-    #nav .innerNav {
+
+    /* Main */
+    #main {}
+
+    #innerMain {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    #innerMain .mainTxt {
         display: flex;
-        justify-content: center;
-    }
-
-    #nav .navCtr {
-        padding: 12px 16px;
-    }
-
-    #nav .navCtr a:nth-child(2n) {
-        margin: 0 8px;
-    }
-
-    /************** Gird **************/
-    .grid-10 {
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 0;
-        /* overflow: hidden; */
-    }
-
-    .secTlt {
-        font-size: 36px;
-        font-size: clamp(20px, 2rem, 24px);
-        margin-bottom: 36px;
-        font-weight: 600;
-    }
-
-    /* main Section */
-    #main {
-        width: 100%;
-    }
-
-    #innerMian .mainTxt {
-        width: 90vw;
+        flex-direction: column;
+        text-align: left;
     }
 
     #innerMain .mainTxt span {
-        margin: 6px auto;
-        padding: 6px 12px;
+        display: flex;
+        gap: 0 1rem;
+        font-size: 3.6em;
+        margin: 0.4rem 0;
+        letter-spacing: -.1rem;
     }
 
+    #innerMain .mainTxt span.min-txt {
+        font-size: 1.8em;
+    }
 
+    section .inner-conts {
+        width: 100%;
+    }
 
-    /************** Intro **************/
+    /* Intro */
     #intro {
         width: 100%;
-        height: auto;
-        overflow: auto;
+        padding: 8rem 2rem;
+        text-align: left;
     }
 
-    #intro article {
-        align-items: center;
-        justify-content: center;
+    #intro .inner-conts {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+        padding: 0;
     }
 
-    #intro .mypic {
+    #intro .img-box {
+        display: none !important;
+    }
+
+    #intro .intro-wrap {
         width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-
-    #intro .intro-wrap .tlt b {
-        font-weight: 600;
     }
 
     #intro .intro-wrap .intro-txt p {
-        margin: 36px 0;
-        line-height: 1.7;
-        font-weight: 100;
-        word-break: normal;
-        background: #eee;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
+        font-size: 2rem;
+        line-height: 1.6;
+        word-break: keep-all;
+        color: var(--tit);
+        background: none;
     }
 
-    #intro .intro-wrap a {
-        font-weight: 600;
-    }
-
-
-
-    /************** Projects **************/
+    /* Project */
     #project {
-        overflow: hidden;
+        width: 100%;
+        padding: 6rem 2rem;
     }
 
-    #project #project-item0 {
-        padding-bottom: 0;
-    }
-
-    #project .grid {
-        padding: 12rem 0 36rem;
-    }
-
-    #project #project-item1 {
-        padding-top: 6rem;
+    #project .project-item {
+        width: 100%;
         border-top: 0;
+        background: var(--bg);
+        padding: 4rem 0;
     }
 
-    #project .img-box.po {
-        display: block !important;
-        margin: 24px auto 0;
+    #project .project-item a {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        padding: 0;
     }
 
-    #project .txt-box {
+    #project .project-item a .txt-box {
         width: 100%;
     }
 
     #project .txt-box h2.tit {
-        font-size: 36px;
+        font-size: 2.8rem;
+        color: var(--pri-dark);
+        margin-bottom: 1.6rem;
     }
 
     #project .txt-box p {
-        margin: 24px auto;
+        margin: 2rem 0;
     }
 
     #project .txt-box p.skill span {
-        margin: 0 5px 5px 0;
+        font-size: 1.2rem;
+        padding: 0.2rem 0.8rem;
     }
 
-    #project .txt-box .info-box.po {
-        display: flex !important;
-        display: none !important;
+    #project .img-box img {
+        display: none;
     }
 
+    /* Study */
+    #study {
+        width: 100%;
+        padding: 6rem 2rem;
+    }
 
-    /************** footer **************/
-    #footer article {
-        padding-top: 20rem;
+    #study .inner-conts {
+        align-items: flex-start;
+    }
+
+    #study .study-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #study .study-item a {
+        width: 100%;
+        display: block;
+        padding: 2rem;
+    }
+
+    #study .study-item a .tit {
+        font-size: 1.8rem;
+    }
+
+    #study .study-item a .desc {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    /* Footer */
+    #footer {
+        width: 100%;
+        height: 100vh;
+        padding: 2rem 2rem 0;
+        margin: 0 auto;
+    }
+
+    #footer .inner-footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 0;
     }
 
     #footer .contact-box p {
-        font-size: 30rem;
+        font-size: 8.4rem;
+        letter-spacing: -0.4rem;
     }
 
-    #footer .contact-box ul li {
-        margin: 24px 0;
+    #footer .inner-footer .contact-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2.4rem;
     }
 
-    #footer .contact-box ul li a {
-        display: block;
+    #footer .contact-list li {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    #footer .inner-footer .contact-list li a {
+        width: 100%;
         max-width: 100%;
-        padding: 16px 8px;
-        font-size: 14px;
-        box-shadow: 2px 2px 0 3px #000;
     }
 
     #footer .copy {
-        right: 24px;
-        bottom: 24px;
+        display: block;
+        right: 2.4rem;
+        bottom: -2.4rem;
+        font-size: 1.2rem;
+        color: #888;
     }
 }
