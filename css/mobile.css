@@ -108,11 +108,16 @@
         padding: 0;
     }
 
+    #project .project-item a > div {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     #project .project-item a .txt-box {
         width: 100%;
     }
 
-    #project .txt-box h2.tit {
+    #project h2.tit {
         font-size: 3.2rem;
         color: var(--pri-dark);
         margin-bottom: 1.6rem;
@@ -121,6 +126,11 @@
 
     #project .txt-box p {
         margin: 2rem 0;
+        max-height: 50vh;
+    }
+
+    #project .txt-box p br + br {
+        display: none;
     }
 
     #project .txt-box p.skill span {
@@ -128,8 +138,9 @@
         padding: 0.2rem 0.8rem;
     }
 
+    #project .img-box,
     #project .img-box img {
-        display: none;
+        display: none !important;
     }
 
     /* Study */

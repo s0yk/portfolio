@@ -305,12 +305,18 @@ section .inner-conts {
     padding: 0 1.6rem;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 4rem;
-    align-items: center;
     box-sizing: border-box;
 }
 
+#project .project-item a > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
 #project .project-item a .txt-box {
     width: 50%;
 }
@@ -334,7 +340,7 @@ section .inner-conts {
     width: 90%;
 }
 
-#project .txt-box h2.tit {
+#project h2.tit {
     font-size: 4.8rem;
     color: var(--pri-dark);
     font-weight: 900;
